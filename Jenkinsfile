@@ -3,24 +3,25 @@ pipeline {
     stages{
          stage('build'){
               steps{
-                 sh 'echo ----------------------------------'
-                 sh 'echo hello folks this is building stage'
-                 sh 'echo ----------------------------------'
+                 echo '----------------------------------'
+                 echo 'hello folks this is building stage'
+                 echo '----------------------------------'
               }
          }
          stage('Test'){
               steps{
-                 sh 'echo ----------------------------------'
-                 sh 'echo hello folks this is Testing stage'
-                 sh 'echo ----------------------------------'
+                 echo '----------------------------------'
+                 echo 'hello folks this is Testing stage'
+                 echo '----------------------------------'
               }
          }
          stage('Deploy'){
               steps{
-                 sh 'echo ----------------------------------'
-                 sh 'echo hello folks this is Deployement stage'
-                 sh 'echo ----------------------------------'
+                 echo '----------------------------------'
+                 echo 'hello folks this is Deployement stage'
+                 echo '----------------------------------'
               }
          }
     }
 }
+
